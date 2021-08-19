@@ -1,0 +1,16 @@
+sushiswap-new$ yarn mumbai:deploy
+yarn run v1.22.5
+$ hardhat --network mumbai deploy
+Nothing to compile
+Creating Typechain artifacts in directory types for target ethers-v5
+Successfully generated Typechain artifacts!
+reusing "UniswapV2Factory" at 0xD84cAaA57736F7Cc3F892d279fD4d6048b301F5a
+reusing "UniswapV2Router02" at 0xE2ddFF6F515096d0601D37f8452B22adD3D165E5
+reusing "SushiToken" at 0xD1417E52A91deb34c415539aa3553d4B8648FC0b
+reusing "MasterChef" at 0xC626ae33A1C6ABEAc3bff7925D18557e5E94620f
+reusing "MiniChefV2" at 0x9c49D8a6d893d5fc73f4676ABC74466C264bbB96
+reusing "Multicall2" at 0x8bF8B8Cd4f8956FC028AF4a3051b09421F4a36a3
+reusing "SushiBar" at 0xD652358653D357E2821d839372cBCA152720FCAF
+reusing "SushiMaker" at 0xab096d73EF1d6c67922eE49a730d0d314864139c
+On chainId (80001), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed
+Done in 29.45s.

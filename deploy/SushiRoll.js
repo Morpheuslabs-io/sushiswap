@@ -15,7 +15,9 @@ module.exports = async function ({ getNamedAccounts, getChainId, deployments }) 
   const chainId = await getChainId()
 
   if (!UNISWAP_ROUTER.has(chainId)) {
-    throw Error("No Uniswap Router")
+    // throw Error("No Uniswap Router")
+    console.log(`On chainId (${chainId}), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed`);
+    return;
   }
 
   const uniswapRouterAddress = UNISWAP_ROUTER.get(chainId)

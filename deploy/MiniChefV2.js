@@ -19,8 +19,11 @@ module.exports = async function ({ ethers, deployments, getNamedAccounts }) {
   } else if (chainId in SUSHI) {
     sushiAddress = SUSHI[chainId]
   } else {
-    throw Error("No SUSHI!")
+    // throw Error("No SUSHI!") // Matic doesn't have SUSHI
   }
+
+  // Always get SushiToken from self-deployed
+  sushiAddress = (await deployments.get("SushiToken")).address
 
   await deploy("MiniChefV2", {
     from: deployer,

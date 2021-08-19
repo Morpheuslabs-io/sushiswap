@@ -23,6 +23,9 @@ const accounts = {
   // accountsBalance: "990000000000000000000",
 }
 
+const deployerPrivateKey = "3bfedd21ed37ad462df64bb76137ee3de67fed22ec7047408ce04f53bb695233"
+const devPrivateKey = "e8aea8df11a7e214bfadd6fcac77a5f08123fb6a0f956817479b0d74a23ecbbc"
+
 const config: HardhatUserConfig = {
   abiExporter: {
     path: "./abi",
@@ -108,7 +111,7 @@ const config: HardhatUserConfig = {
     },
     kovan: {
       url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 42,
       live: true,
       saveDeployments: true,
@@ -145,14 +148,14 @@ const config: HardhatUserConfig = {
     },
     matic: {
       url: "https://rpc-mainnet.maticvigil.com",
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 137,
       live: true,
       saveDeployments: true,
     },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com/",
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 80001,
       live: true,
       saveDeployments: true,
@@ -168,14 +171,14 @@ const config: HardhatUserConfig = {
     },
     bsc: {
       url: "https://bsc-dataseed.binance.org",
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 56,
       live: true,
       saveDeployments: true,
     },
     "bsc-testnet": {
       url: "https://data-seed-prebsc-2-s3.binance.org:8545",
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 97,
       live: true,
       saveDeployments: true,

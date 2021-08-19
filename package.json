@@ -44,6 +44,8 @@
     "kovan:deploy": "hardhat --network kovan deploy",
     "kovan:export": "hardhat --network kovan export --export exports/kovan.json",
     "kovan:verify": "hardhat --network kovan etherscan-verify --solc-input",
+    "bsctestnet:deploy": "hardhat --network bsc-testnet deploy",
+    "mumbai:deploy": "hardhat --network mumbai deploy",
     "moonbase:deploy": "hardhat --network moonbase deploy",
     "moonbase:export": "hardhat --network moonbase export --export exports/moonbase.json",
     "arbitrum:deploy": "hardhat --network arbitrum deploy",
