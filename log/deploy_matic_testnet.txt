@@ -4,13 +4,17 @@ $ hardhat --network mumbai deploy
 Nothing to compile
 Creating Typechain artifacts in directory types for target ethers-v5
 Successfully generated Typechain artifacts!
-reusing "UniswapV2Factory" at 0xD84cAaA57736F7Cc3F892d279fD4d6048b301F5a
-reusing "UniswapV2Router02" at 0xE2ddFF6F515096d0601D37f8452B22adD3D165E5
-reusing "SushiToken" at 0xD1417E52A91deb34c415539aa3553d4B8648FC0b
-reusing "MasterChef" at 0xC626ae33A1C6ABEAc3bff7925D18557e5E94620f
-reusing "MiniChefV2" at 0x9c49D8a6d893d5fc73f4676ABC74466C264bbB96
-reusing "Multicall2" at 0x8bF8B8Cd4f8956FC028AF4a3051b09421F4a36a3
-reusing "SushiBar" at 0xD652358653D357E2821d839372cBCA152720FCAF
-reusing "SushiMaker" at 0xab096d73EF1d6c67922eE49a730d0d314864139c
+deploying "UniswapV2Factory" (tx: 0x734cc715ef53f19dd574fa31bbe347d5f8121d37aac13de44f687ea7a929b6f2)...: deployed at 0x075a3Dd59F039127D708064d71442BFbEDfd4154 with 2509406 gas
+deploying "UniswapV2Router02" (tx: 0x4d14a194d05b79a7ee921bb1c85ce82836a71e783f4458275638387903fc6f30)...: deployed at 0x7F273242b83c3A16Dab050B009fAEdf62a98709f with 3875349 gas
+deploying "SushiToken" (tx: 0xe89439173b01ed4fbdf07a71e23a01c999c33845398b96d6ff945df0204dc251)...: deployed at 0xDdedbde67be6228a1826e61C776971f03675DAb3 with 1626787 gas
+deploying "MasterChef" (tx: 0x2af4f7166493db687c7bae32333674e1bacf02d3879c87656e5e102f8ea285af)...: deployed at 0x7a0038987Ca18b07B92E13d8717dEE21d0F0B840 with 1743884 gas
+Transfer Sushi Ownership to Chef
+Transfer ownership of MasterChef to dev
+deploying "MiniChefV2" (tx: 0x7dfad5e2d574b05333755eb98b8ef5de376eef9cc2278f92ab2c903b4df94e4f)...: deployed at 0x76bd99e49dD65b6212577738cb99c809910f8fab with 2473478 gas
+Transfer ownership of MiniChef to dev
+deploying "Multicall2" (tx: 0xccc31d3b768ac4a770537d137505b08ca7597d04030445ae858e414fbe06d0e1)...: deployed at 0x97C4C0d396A5d9502D250a0A362a15A83fe9A4bd with 563129 gas
+deploying "SushiBar" (tx: 0xd4d5d1fa85f9d2a63e5dfb58c07b3ff0d122ac116086e093525208e9a2722790)...: deployed at 0xCb886aD4F53fEbBd95646AeBeCe4b714E838Eed0 with 1038053 gas
+deploying "SushiMaker" (tx: 0xd94d273492ecba59abd0ba618c30c95711bb0aa4b70deeb93899d1cad7d8f289)...: deployed at 0x5595048De6123604646456BE407BfAAC4d34beF7 with 1303401 gas
+Setting maker owner
 On chainId (80001), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed
-Done in 29.45s.
+Done in 110.98s.

@@ -12,9 +12,9 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
   if (chainId === "31337") {
     wethAddress = (await deployments.get("WETH9Mock")).address;
   } else if (chainId === "80001") {
-    wethAddress = "0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa";
+    wethAddress = "0x5B67676a984807a212b1c59eBFc9B3568a474F0a"; // this is the WMATIC (not the WETH)
   } else if (chainId === "137") {
-    wethAddress = "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619";
+    wethAddress = "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"; // this is the WMATIC (not the WETH)
   } else if (chainId in WNATIVE) {
     wethAddress = WNATIVE[chainId].address;
   } else {
