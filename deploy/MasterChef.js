@@ -12,11 +12,13 @@ module.exports = async function ({ ethers, deployments, getNamedAccounts }) {
     deterministicDeployment: false
   })
 
-  if (await sushi.owner() !== address) {
-    // Transfer Sushi Ownership to Chef
-    console.log("Transfer Sushi Ownership to Chef")
-    await (await sushi.transferOwnership(address)).wait()
-  }
+  // MiniChefV2 is used in replacement of MasterChef
+  // Thus, do not transfer ownership of Sushi to MasterChef
+  // if (await sushi.owner() !== address) {
+  //   // Transfer Sushi Ownership to Chef
+  //   console.log("Transfer Sushi Ownership to Chef")
+  //   await (await sushi.transferOwnership(address)).wait()
+  // }
 
   const masterChef = await ethers.getContract("MasterChef")
   if (await masterChef.owner() !== dev) {
