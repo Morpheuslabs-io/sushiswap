@@ -1,0 +1,33 @@
+sushiswap-morpheus-repo/sushiswap-new$ yarn mumbai:deploy
+yarn run v1.22.5
+$ hardhat --network mumbai deploy
+Compiling 42 files with 0.6.12
+contracts/SushiToken.sol:26:5: Warning: Documentation tag on non-public state variables will be disallowed in 0.7.0. You will need to use the @dev tag explicitly.
+    /// @notice A record of each accounts delegate
+    ^--------------------------------------------^
+
+contracts/governance/Timelock.sol:122:51: Warning: Using ".value(...)" is deprecated. Use "{value: ...}" instead.
+        (bool success, bytes memory returnData) = target.call.value(value)(callData);
+                                                  ^---------------^
+
+contracts/SushiRoll.sol:80:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        uint256 deadline
+        ^--------------^
+
+Compilation finished successfully
+Creating Typechain artifacts in directory types for target ethers-v5
+Successfully generated Typechain artifacts!
+deploying "UniswapV2Factory" (tx: 0x580606c423802bc6ae37b616a856b4827320271e23ed12219ebe9e3f223b283f)...: deployed at 0x8b3bA1FF9ad629Cdc13bEdc5bf9aF847a5e8Db38 with 2509406 gas
+deploying "UniswapV2Router02" (tx: 0xac547a397fa40bc42699c74de2d2ea815349ed8cba5bede6290b334bb845e5ec)...: deployed at 0x92f2ba9098b44ECB203a8CE02E8447387C0cA27a with 3875349 gas
+deploying "SushiToken" (tx: 0x0e74e3d01cc8b8713cf19213076d446a1216549a576acb4e8a16dfc9236110ad)...: deployed at 0x5507d0a8Cd475e4f7Be46f229322f5848A789Da4 with 1626890 gas
+deploying "MasterChef" (tx: 0xcfd40d5ac169d7e456216fa11ff0c712e46cc3e87251b17782f1c13ebc4d4d57)...: deployed at 0x2B9ba4ce8A07967c7d516cAA52F13e237E73A580 with 1743884 gas
+Transfer Sushi Ownership to Chef
+Transfer ownership of MasterChef to dev
+deploying "MiniChefV2" (tx: 0x237fdee9dacfec90d818db5c8d797fe3c8beafd7819786580199e188ddad880e)...: deployed at 0xdb7d0A299a448c8e14964C40C98b39756A5aE0E2 with 2473478 gas
+Transfer ownership of MiniChef to dev
+deploying "Multicall2" (tx: 0xffcb45f27eede228af8a223b7c2564818f41c0ef0eb2c81856c3b65fc74ce642)...: deployed at 0x615B5F46b01B96663074AB0893Ea7635d03e8b59 with 563129 gas
+deploying "SushiBar" (tx: 0x6dd53ee3b5ef97383c53d556cf27135f10aee8e126f500561665a68b92acbd08)...: deployed at 0xc2864BAbF47D4c908165aFeF3812A45408205024 with 1037989 gas
+deploying "SushiMaker" (tx: 0xfbc892a29decca82c65d93d7159566fac4939bfbf48cdf3550141ae35c521666)...: deployed at 0xB47922fa332de40D53144Eba52A414A152043Db5 with 1303401 gas
+Setting maker owner
+On chainId (80001), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed
+Done in 107.37s.

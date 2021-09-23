@@ -23,7 +23,10 @@ const accounts = {
   // accountsBalance: "990000000000000000000",
 }
 
+// 0xA7fc2009cc8B36997Ef533deC396d6B4B00760E4
 const deployerPrivateKey = "3bfedd21ed37ad462df64bb76137ee3de67fed22ec7047408ce04f53bb695233"
+
+// 0x342a9269596f0351b5067a32452d6bFBdb435265
 const devPrivateKey = "e8aea8df11a7e214bfadd6fcac77a5f08123fb6a0f956817479b0d74a23ecbbc"
 
 const config: HardhatUserConfig = {
