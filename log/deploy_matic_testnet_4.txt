@@ -1,0 +1,16 @@
+Compilation finished successfully
+Creating Typechain artifacts in directory types for target ethers-v5
+Successfully generated Typechain artifacts!
+deploying "UniswapV2Factory" (tx: 0x451e57a3b5dd53dce5ed4a6919d0dd24c4b299f46b27b93abe4cc5e98f2b16ca)...: deployed at 0x9d0d6EBb55cFd4899A2B34A8488587d1104e8d6E with 2509406 gas
+deploying "UniswapV2Router02" (tx: 0x80102619a7b128f2fb856ce368e28582da46d99db82f39c0ac66c5d1c5aac66d)...: deployed at 0x4C1f349F795a6B0d36c3442659eb8C2749106291 with 3875349 gas
+deploying "SushiToken" (tx: 0x0c10bb704afad57c518c7ac0264467c0b7fc550604afb33482a99955a076c861)...: deployed at 0xE4F64c6725060F8444392d2E315E08C85f633C65 with 1626890 gas
+deploying "MasterChef" (tx: 0x9177997f3d4cf795ea5559bddcaea7b43acb177e6c7889d68da016750f65bda2)...: deployed at 0xE09D60aF665FF32c13df3b17d4AEa7fd89146E15 with 1743884 gas
+Transfer ownership of MasterChef to dev
+deploying "MiniChefV2" (tx: 0xae6f8dc8442e18c8b6adb1ff8dd3b3720849677ff92f929708cf0c1afda546a0)...: deployed at 0x58977d088A698F787ad6E382Bc9C5C5b11673603 with 2473478 gas
+Transfer ownership of MiniChef to dev
+deploying "Multicall2" (tx: 0x999c78d7fb84679e2afe01b4a2282e393508e49c8d884541842ef5f329b2688c)...: deployed at 0xB580155C6021f68B8981F298419Ff6aA06e9ADe6 with 563129 gas
+deploying "SushiBar" (tx: 0x4a17c2244e8aa0cc978258e9abb051e2aaae37f468319aecb07c0825f36ab5d6)...: deployed at 0x59eC3E1D9dc715B32697a70bd2cEb1C006E00b48 with 1037989 gas
+deploying "SushiMaker" (tx: 0x6abd6c9f36a1b3533a6962b194d34528cf0ae76f81db0ec27011be52063dad92)...: deployed at 0x027A1452cFf71c3bB046669522d95Fa4e54FDc9c with 1303401 gas
+Setting maker owner
+On chainId (80001), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed
+Done in 125.73s.
